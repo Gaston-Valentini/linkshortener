@@ -10,8 +10,9 @@ dotenv.config();
 const app = express();
 
 // Settings
-app.set("DATABASE", process.env.DATABASE);
 app.set("PORT", process.env.PORT);
+app.set("DATABASE", process.env.DATABASE);
+app.set("JWT", process.env.JWT);
 
 // Middlewares
 app.use(express.json());
