@@ -2,7 +2,7 @@ import { User } from "../models/User.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import { app } from "../app/app.js";
-import { validateAuthFields } from "../functions/falidateAuthFields.js";
+import { validateAuthFields } from "../functions/validateAuthFields.js";
 
 const register = async (req, res) => {
     try {
