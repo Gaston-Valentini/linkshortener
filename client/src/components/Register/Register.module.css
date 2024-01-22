@@ -1,0 +1,148 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.content {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.image {
+    height: 100%;
+    width: 50%;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.dataTitles {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.dataTitlesTitle {
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--violet);
+}
+
+.dataForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dataFormSection {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--lightGrey);
+    border: 2px solid var(--lightGrey);
+    border-radius: 50px;
+}
+
+.dataFormSectionIcon,
+.dataFormSectionEye {
+    font-size: 20px;
+}
+
+.dataFormSectionEye:hover {
+    cursor: pointer;
+    color: var(--violet);
+}
+
+.dataFormSectionInput {
+    width: 100%;
+    background-color: var(--lightGrey);
+    border: 0px;
+}
+.dataFormSectionInput:focus {
+    outline: none;
+}
+
+.dataFormTerms {
+    margin: 20px 0;
+}
+
+.dataFormTermsText {
+    margin-right: 15px;
+}
+
+.dataFormTermsText a {
+    color: var(--violet);
+    font-weight: 600;
+    text-decoration: none;
+}
+.dataFormTermsText a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.dataFormTermsSwitch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+}
+
+.dataFormTermsSwitchSlider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--grey);
+    border-radius: 50px;
+    transform: translateX(-5px);
+}
+
+.dataFormTermsSwitchSlider:before {
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.2s;
+    border-radius: 50px;
+}
+
+input:checked + .dataFormTermsSwitchSlider {
+    background-color: var(--violet);
+}
+
+input:checked + .dataFormTermsSwitchSlider:before {
+    transform: translateX(16px);
+}
+
+.dataFormSubmit {
+    padding: 10px;
+    font-weight: 600;
+    color: var(--violet);
+    background-color: white;
+    border: 2px solid var(--violet);
+    border-radius: 50px;
+}
+.dataFormSubmit:hover {
+    cursor: pointer;
+    color: white;
+    background-color: var(--violet);
+}
